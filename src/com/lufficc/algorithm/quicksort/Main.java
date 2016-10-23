@@ -1,8 +1,13 @@
 package com.lufficc.algorithm.quicksort;
 
-public class Main {
+import com.lufficc.algorithm.utils.Print;
+import com.lufficc.algorithm.utils.RandomUtil;
 
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int[] a = RandomUtil.randomArray(10);
+        Print.printArray(a);
+        QuickSort.sort(a);
+        Print.printArray(a);
     }
 }
