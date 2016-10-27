@@ -4,11 +4,15 @@ package com.lufficc.algorithm.quicksort;
  * Created by lufficc on 2016/10/23.
  */
 public class QuickSort {
+    /**
+     * @see http://blog.csdn.net/morewindows/article/details/6684558
+     */
     private static int partion(int[] array, int l, int r) {
         int i = l, j = r;
         int x = array[i];
 
         while (i < j) {
+            // 从右向左搜索
             while (i < j && array[j] >= x) {
                 j--;
             }
@@ -16,7 +20,7 @@ public class QuickSort {
                 array[i] = array[j];
                 i++;
             }
-
+            // 从左向右搜索
             while (i < j && array[i] < x) {
                 i++;
             }
