@@ -1,9 +1,7 @@
-package com.lufficc.algorithm.sort;
+package com.lufficc.algorithm.Sort.QuickSort;
 
 import com.lufficc.algorithm.utils.Printer;
 import com.lufficc.algorithm.utils.RandomUtils;
-
-import java.util.Arrays;
 
 /**
  * Created by lufficc on 2016/10/23.
