@@ -1,14 +1,14 @@
 package com.lufficc.algorithm.MaxSubArray;
 
-import com.lufficc.algorithm.utils.Print;
+import com.lufficc.algorithm.utils.Printer;
 
 /**
  * Created by lufficc on 2016/10/27.
  */
-public class Main {
+public class MaxSubArray {
     public static void main(String[] args) {
-        Print.printArray(new Main().solve(new int[]{10, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7}));
-        Print.printArray(new Main().solve(new int[]{12, 1, 2}));
+        Printer.printArray(new MaxSubArray().solve(new int[]{10, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7}));
+        Printer.printArray(new MaxSubArray().solve(new int[]{-2, -2, -2}));
     }
 
     public int[] solve(int[] a) {
